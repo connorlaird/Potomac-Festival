@@ -1,0 +1,225 @@
+body.homepage {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+    background-color: rgb(147, 161, 176);
+}
+
+
+
+/* Header section style
+-------------------------------------------------- */
+
+#header-logo {
+    width: 80%;
+    max-width: 500px;
+}
+div.header-titles {
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+div.header-image {
+    position: relative;
+    max-height: 400px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 20px 0;
+}
+img.header-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+/* Registration button 
+-------------------------------------------------- */
+
+.register-text {
+    font-size: 1.25em;
+    margin-bottom: 1.5em;
+}
+.register-button {
+    text-align: center;
+    color: #0074D9;
+    border: 4px solid #0074D9;
+    border-radius: 19px;
+    display: block;
+    width: 50%;
+    min-width: 100px;
+    margin: 10px auto;
+    font-size: 2.5em;
+    padding: 0.1em 0.4em;
+    text-decoration: none;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+}
+.register-button:hover {
+    background-color: #0074D9;
+    color: #fff;
+}
+
+/* Line slide section styles
+-------------------------------------------------- */
+
+.lines-container h2,
+.lines-container h3 {
+    text-align: center;
+}
+.line-slide {
+    border: 2px solid rgb(147, 161, 176);
+    border-radius: 21px;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+}
+.line-slide img {
+    width: 100%;
+    margin: 10px;
+}
+
+/* Partner/Sponsor images
+-------------------------------------------------- */
+
+.partner-image-holder {
+    height: 200px;
+    position: relative;
+}
+.partner-image-holder img {
+    max-height: 200px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.partners-container h2 {
+    text-align: center;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+.navbar {
+    background-color: rgb(147, 161, 176);
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: #eee;
+}
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+/* Homepage Boxs
+-------------------------------------------------- */
+.homepage-boxes {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+.homepage-boxes .col-sm-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.homepage-boxes h2 {
+    font-weight: normal;
+}
+.homepage-boxes .col-sm-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.icon-holder {
+    width: 140px;
+    border: 4px solid;
+    border-radius: 70px;
+    height: 140px;
+    margin: auto;
+}
+.icon-holder i {
+    margin-top: 30px;
+}
+
+/* Results tables
+-------------------------------------------------- */
+
+#results-container {
+    text-align: center;
+    background-color: rgb(147, 161, 176);
+    color: #fff;
+}
+
+.col-md-5 table th{
+	text-align:center;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+}
+@media (max-width: 744px) {
+    .col-md-5 table {
+        width: 80%;
+        margin: auto;
+    }
+	.homepage-boxes{
+		width: 80%;
+		margin:auto;
+	}
+	.register-button {
+	    width: 80%;
+
+	}
+	#results-container {
+	    display:hidden;
+	}
+}
+
+}
