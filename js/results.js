@@ -18,12 +18,17 @@ function populateTables(data) {
 
     // All is well, find the #results-container element and populate
     else {
+		$('#results-container').append("<h2>Race Results For: </h2><select class='form-control'  id='results-select'></select>")
         for (var key in data) {
-            $('#results-container').append("<div class='row'><div class='col-md-4 col-md-offset-4'><h3>" + data[key]["Year"] + " Race Results</h3></div></div>");
+			if(typeof current == 'undefined'){
+				current = data[key]["Year"];
+			}
+			
+			$('#results-select').append("<option class='results-option' id='" + data[key]["Year"] + "' >" + data[key]["Year"] + "</option>")
 
 			// Init variables
             var cols = GetColumns(data[key]['Long']);
-            var row = $("<div class='row'></div>");
+            var row = $("<div class='row result-listing result" + data[key]["Year"] + "'></div>");
             var table = CreateTable(data[key]['Long'], cols);
             var col = $("<div class='col-md-5 col-md-offset-1'></div>");
 
@@ -41,7 +46,22 @@ function populateTables(data) {
 
             $('#results-container').append(row);
         }
+        $('.result-listing').hide();
+        $('.result' + current).show();
+		
+		
     }
+	
+   $(function() {    // Makes sure the code contained doesn't run until
+                     //     all the DOM elements have loaded
+
+       $('#results-select').change(function(current){
+           $('.result-listing').hide();
+           $('.result' + $(this).val()).show();
+       });
+	   
+   });
+   
 
 
 }
@@ -122,3 +142,5 @@ function changeLineSlide(active) {
     var selector = "#" + active;
     $(selector).removeClass("hidden");
 }
+
+

@@ -170,15 +170,30 @@ img.header-image {
 
 /* Results tables
 -------------------------------------------------- */
-
+#results-select{
+    display: inline;
+    width: 10%;
+    min-width: 150px;
+    text-align: center;
+	  color: #0074D9;
+	  font-weight: bold;
+	  height: 45px;
+	  font-size: 20px;
+}
 #results-container {
     text-align: center;
     background-color: rgb(147, 161, 176);
     color: #fff;
 }
-
+#results-container h2{
+	padding-top: 20px;
+}
 .col-md-5 table th{
 	text-align:center;
+}
+
+.festival-schedule h3, .festival-schedule p,  .festival-schedule ul{
+	margin-left: 10%;
 }
 
 /* RESPONSIVE CSS
