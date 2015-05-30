@@ -65,15 +65,18 @@ img.header-image {
     text-align: center;
 }
 .line-slide {
-    border: 2px solid rgb(147, 161, 176);
-    border-radius: 21px;
+	padding: 0;
+}
+.line-slide .col-sm-6 {
+	padding:0;
+}
+.line-slide .img-slide {
     padding: 10px;
-    width: 80%;
-    margin: 10px auto;
+    border-radius: 25px;
 }
 .line-slide img {
     width: 100%;
-    margin: 10px;
+    border-radius: 25px;
 }
 
 /* Partner/Sponsor images
@@ -192,8 +195,30 @@ img.header-image {
 	text-align:center;
 }
 
+/* Schedule 
+-------------------------------------------------- */
+
 .festival-schedule h3, .festival-schedule p,  .festival-schedule ul{
 	margin-left: 10%;
+}
+
+/* Shannon footer
+-------------------------------------------------- */
+
+.shannon{
+	text-align: center;
+	padding: 10px;
+}
+.shannon img{
+    border-radius: 150px;
+    width: 100px;
+	border: 2px solid;
+}
+.homepage .shannon{
+	color: #ddd;
+}
+.homepage .shannon img{
+	border: 2px solid #ddd;
 }
 
 /* RESPONSIVE CSS
@@ -219,11 +244,22 @@ img.header-image {
     }
 
 }
+@media (max-width: 950px) {
+	.col-md-5 table{
+	    width: 80%;
+	    margin: auto;
+	}
+}
+
 @media (max-width: 744px) {
-    .col-md-5 table {
+/*    .col-md-5 table {
         width: 80%;
         margin: auto;
-    }
+    }*/
+	.btn-group-justified .btn-group button{
+		font-size: 8px;
+	}
+
 	.homepage-boxes{
 		width: 80%;
 		margin:auto;
@@ -232,9 +268,10 @@ img.header-image {
 	    width: 80%;
 
 	}
+
+	
 	#results-container {
 	    display:hidden;
 	}
 }
 
-}
