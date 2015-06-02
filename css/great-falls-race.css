@@ -13,10 +13,17 @@ body.homepage {
     width: 80%;
     max-width: 500px;
 }
+
 div.header-titles {
     margin: auto;
     text-align: center;
     background-color: white;
+	background-image: url(/img/header-bg.jpg);
+}
+body.homepage div.header-titles{
+    background-color: white;
+	background-image: none;
+	
 }
 div.header-image {
     position: relative;
