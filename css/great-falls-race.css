@@ -194,6 +194,19 @@ img.header-image {
     margin-top: 30px;
 }
 
+.homepage nav{
+	border:0;
+	
+}
+
+.homepage table{
+	text-align:center;
+	
+}
+.homepage .navbar-default .navbar-nav>.active>a{
+	background-color:#fff;
+}
+
 /* Results tables
 -------------------------------------------------- */
 #results-select{
