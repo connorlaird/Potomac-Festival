@@ -16,17 +16,16 @@
 
     <!-- Custom styles for this template -->
     <link href="css/great-falls-race.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 </head>
 
-<body class="homepage">
+<body>
+
 
     <div class="header-titles">
         <a href="index.html"><img src="img/logo.png" id="header-logo" alt="potomac fest 2015" /></a>
 		<h5 style='text-align:right; padding:10px;  margin: 0;'>Brought to you by the Great Falls Foundation</h5>
     </div>
-
 
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -44,13 +43,13 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a>
+                    <li><a href="index.html">Home</a>
                     </li>
                     <li><a href="results2015.html">2015 Results</a>
                     </li>
                     <li><a href="race.html">Great Falls Race</a>
                     </li>
-                    <li><a href="intro.html">Intro to Paddling</a>
+                    <li class="active"><a href="intro.html">Intro to Paddling</a>
                     </li>
                     <li><a href="partners.html">Partners</a>
                     </li>
@@ -60,66 +59,50 @@
         </div>
         <!--/.container-fluid -->
     </nav>
+ 
 
-    <div class="container homepage-boxes">
-        <div style='padding: 0% 13%;' class="row">
-			<h1>Potomac Festival 2016</h1>
-			
-			<h3>Schedule:</h3>
-			     <h5>Sunday July 10 -  Special Potomac Festival Event!</h5>
-	          <h6><a href='intro.html'>Introduction to Paddling</a>  </h6>
-				 
-			       <ul>  <li> 3:00 – 6:00pm</li>
-			          <li>Riley’s Lock, 13025 Riley’s Lock Road, Poolesville, MD 20837 </li>
-				   </ul> 
-			    <h5> Saturday, September 10, 2016</h5>
-			        <ul> 
-			          <li><a href='race.html'>11:00am : Great Falls Race </a></li>
-			          <li>7:00pm : Party for the Potomac – details coming soon!</li>
-					</ul> 
-					
-			    <h5> Sunday, September 11, 2016</h5>
-			        <ul> 
-			          <li>11:00am : Little Falls Race – details coming soon! </li>
-			          <li>3:00pm : Standup Paddleboard Event – details coming soon!</li>
-					</ul>
-					
-				<h4>Event and Volunteer registrations coming soon</h4>
-					
-			</div>
-		
+    <div class=" container">
+		<h1>Introduction to Paddling</h1>
+		<h2>Sunday, July 10th • 3-6pm • Riley's Lock</h2>
+		<h3>13025 Rileys Lock Rd, Poolesville, MD 20837</h3>
+		<p>From the Beltway, take River Road west toward Potomac.  Continue past Potomac for 5 miles.
+Turn left to stay on River Road at the intersection with Seneca Road, then left on Rileys Lock Road.</p>
+		<ul><li>Adults and kids, 5 and over, are welcome to join the fun.</li>
+<li>No experience necessary!</li>
+<li>We supply the equipment, you supply the energy.</li>
+<li>Plan to get wet and have a blast!</li>
+<li>Bring water and snacks.  No concessions are available.</li></ul>
+
+<h5>For more information and a map link go to: <a href='http://canoncruisers.clubexpress.com/content.aspx?page_id=87&club_id=394800&item_id=526725'>Potomac River Festival Family Day</a></h5>
+
+<h5>Co-Sponsored by:  <br/>
+<a href='http://www.calleva.org/'>Calleva Outdoor Adventures</a>, <a href='http://www.teamriverrunner.org/'>Team River Runner</a> and <a href='http://www.canoecruisers.org/'>Canoe Cruisers Association</a></h5>
+ 
+<p>Volunteers are needed to help with this event.  We need paddlers to help people get into boats and paddlers to act as safety boats. If you can help, please contact <a href='mailto:alfcooley@gmail.com'>Alf Cooley</a>.</p>
+
 
 
     </div>
-    <!-- /.container -->
-	
+	<hr/>
 	<div class="shannon">
 		<img src="img/shannon.jpg" alt="In Memory of Shannon Christy">
 		<h6>In Memory of Shannon Christy</h6>
 	</div>
 
 
-    <!-- JavaScript
+    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script >
-	$(function() {    // Makes sure the code contained doesn't run until
-	                  //     all the DOM elements have loaded
-
-	    $('#results-select').change(function(){
-	        $('.result-listing').hide();
-	        $('.result' + $(this).val()).show();
-	    });
-
-	});
-	</script>
-	
 </body>
 
 </html>
