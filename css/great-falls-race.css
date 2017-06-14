@@ -30,8 +30,8 @@ div.header-titles {
 	background-image: url(/img/header-bg.jpg);
 }
 body.homepage div.header-titles{
-    background-color: white;
-	background-image: none;
+    /*background-color: white;*/
+	/*background-image: none;*/
 	
 }
 div.header-image {
